@@ -14,7 +14,7 @@ class UserService
         $this->providersNamespace = "\App\FactoryMethod\Factories\\";
     }
 
-    public function getUserData($request): array
+    public function getUsersData($request): array
     {
         $results = [];
         foreach ($this->providers as $provider) {

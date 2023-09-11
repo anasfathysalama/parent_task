@@ -21,7 +21,7 @@ class UserController extends Controller
 
     public function index(Request $request): JsonResponse
     {
-        return response()->json($this->userService->getUserData($request));
+        return response()->json($this->userService->getUsersData($request));
     }
 
 }
